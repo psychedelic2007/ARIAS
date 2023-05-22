@@ -70,7 +70,7 @@ def home_page():
         
         st.image(avatar, use_column_width=True, output_format='PNG')
     
-     with col2:
+    with col2:
         st.markdown("<h2 style='text-align: center; font-weight: bold;'>Satyam Sangeet</h2>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>"
                     "<a href='https://github.com/psychedelic2007' target='_blank'>GitHub</a> | "

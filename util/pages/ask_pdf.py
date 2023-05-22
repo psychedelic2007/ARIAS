@@ -34,36 +34,38 @@ def arias_ask():
         submit_button = st.form_submit_button("Submit")
 
     if submit_button:
-        with st.spinner("Wait"):
-            # extract the text
-            if pdf is not None:
-                pdf_reader = PdfReader(pdf)
-                text = ""
-                for page in pdf_reader.pages:
-                    text += page.extract_text()
+        if api_key:
+            with st.spinner("ARIAS is scanning the document and preparing your anaswer....."):
+                # extract the text
+                if pdf is not None:
+                    pdf_reader = PdfReader(pdf)
+                    text = ""
+                    for page in pdf_reader.pages:
+                        text += page.extract_text()
 
-                # split into chunks
-                text_splitter = CharacterTextSplitter(
-                    separator="\n",
-                    chunk_size=1000,
-                    chunk_overlap=200,
-                    length_function=len
-                )
-                chunks = text_splitter.split_text(text)
+                    # split into chunks
+                    text_splitter = CharacterTextSplitter(
+                        separator="\n",
+                        chunk_size=1000,
+                        chunk_overlap=200,
+                        length_function=len
+                    )
+                    chunks = text_splitter.split_text(text)
 
-                # create embeddings
-                embeddings = OpenAIEmbeddings(openai_api_key=api_key)
-                knowledge_base = FAISS.from_texts(chunks, embeddings)
+                    # create embeddings
+                    embeddings = OpenAIEmbeddings(openai_api_key=api_key)
+                    knowledge_base = FAISS.from_texts(chunks, embeddings)
 
-                # show user input
-                #user_question = st.text_input("Ask a question about your PDF:")
-                if user_question:
-                    docs = knowledge_base.similarity_search(user_question)
+                    # show user input
+                    if user_question:
+                        docs = knowledge_base.similarity_search(user_question)
 
-                    llm = OpenAI()
-                    chain = load_qa_chain(llm, chain_type="stuff")
-                    with get_openai_callback() as cb:
-                        response = chain.run(input_documents=docs, question=user_question)
-                        print(cb)
+                        llm = OpenAI()
+                        chain = load_qa_chain(llm, chain_type="stuff")
+                        with get_openai_callback() as cb:
+                            response = chain.run(input_documents=docs, question=user_question)
+                            print(cb)
 
-                    st.write(response)
+                        st.write(response)
+         else:
+            st.error("Please enter your OPENAI API Key")

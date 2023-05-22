@@ -1,0 +1,7 @@
+streamlit
+openai
+PyPDF2
+pyperclip
+tiktoken
+langchain
+pdf2image

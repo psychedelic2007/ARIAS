@@ -6,3 +6,4 @@ tiktoken
 langchain
 pdf2image
 python-dotenv
+faiss-cpu

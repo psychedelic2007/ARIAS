@@ -58,7 +58,7 @@ def arias_ask():
                     if user_question:
                         docs = knowledge_base.similarity_search(user_question)
 
-                        llm = OpenAI()
+                        llm = OpenAI(openai_api_key=api_key)
                         chain = load_qa_chain(llm, chain_type="stuff")
                         with get_openai_callback() as cb:
                             response = chain.run(input_documents=docs, question=user_question)

@@ -42,3 +42,18 @@ def home_page():
     st.markdown("Join me on this exciting journey as we uncover the true potential of ARIAS and unlock a world of research at our "
     "fingertips. Let's embark on an intellectual adventure like no other and redefine the way we consume and understand "
     "scholarly knowledge. Together, we can conquer the challenges of research and embrace the wonders of ARIAS!")
+    
+    st.markdown("---")
+
+    st.write("## About Me")
+
+    st.image('my_avatar.png')
+    st.markdown("<h2 style='text-align: center; font-weight: bold;'>Your Name</h2>", unsafe_allow_html=True)
+
+    st.markdown("<p style='text-align: center;'>"
+                "<a href='https://github.com/psychedelic2007' target='_blank'><img src='github_icon.png' width='30'></a>"
+                "<a href='https://scholar.google.com/citations?user=GgF3yTYAAAAJ&hl=en' target='_blank'><img src='google_scholar_icon.png' width='30'></a>"
+                "<a href='https://www.researchgate.net/profile/Satyam-Sangeet' target='_blank'><img src='researchgate_icon.png' width='30'></a>"
+                "<a href='mailto:satyamsangeet229@gmail.com'><img src='email_icon.png' width='30'></a>"
+                "</p>",
+                unsafe_allow_html=True)

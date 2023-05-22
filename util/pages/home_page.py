@@ -45,13 +45,13 @@ def home_page():
     
     st.markdown("---")
 
-    st.write("## About Me")
+    st.write("# About Me")
 
     col1, col2 = st.columns([1, 2])
     
     
     with col1:
-        st.image('my_avatar.png', width=150)
+        st.image('my_avatar.png', width=200)
     
     with col2:
         st.markdown("<h2 style='text-align: center; font-weight: bold;'>Your Name</h2>", unsafe_allow_html=True)

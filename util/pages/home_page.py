@@ -72,6 +72,7 @@ def home_page():
     
     with col2:
         st.markdown("<h2 style='text-align: center; font-weight: bold;'>Satyam Sangeet</h2>", unsafe_allow_html=True)
+        st.markdown("<p style='text-align: center;'>Calling all curious minds! I'm Satyam Sangeet, a computational researcher on a mission to blend the powers of AI and ML with the fascinating world of research. Armed with algorithms and a thirst for knowledge, I dive deep into complex questions, unraveling their mysteries with data-driven insights. From crafting innovative models to deciphering patterns, I embark on an exhilarating journey where cutting-edge technology meets the frontiers of scientific inquiry. Join me as we push boundaries, unlock new discoveries, and reshape the way we perceive the world. Together, let's revolutionize research and pave the way for a future where AI and ML shape the landscape of knowledge</h2>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>"
                     "<a href='https://github.com/psychedelic2007' target='_blank'>GitHub</a> | "
                     "<a href='https://scholar.google.com/citations?user=GgF3yTYAAAAJ&hl=en' target='_blank'>Google Scholar</a> | "

@@ -70,12 +70,13 @@ def home_page():
         
         st.image(avatar, use_column_width=True, output_format='PNG')
     
-    with col2:
+     with col2:
         st.markdown("<h2 style='text-align: center; font-weight: bold;'>Satyam Sangeet</h2>", unsafe_allow_html=True)
         st.markdown("<p style='text-align: center;'>"
-                "<a href='https://github.com/psychedelic2007' target='_blank'><img src='github.svg' width='30'></a>"
-                "<a href='https://scholar.google.com/citations?user=GgF3yTYAAAAJ&hl=en' target='_blank'><img src='google.svg' width='30'></a>"
-                "<a href='https://www.researchgate.net/profile/Satyam-Sangeet' target='_blank'><img src='researchgate.svg' width='30'></a>"
-                "<a href='mailto:satyamsangeet229@gmail.com'><img src='email.svg' width='30'></a>"
-                "</p>",
-                unsafe_allow_html=True)
+                    "<a href='https://github.com/psychedelic2007' target='_blank'>GitHub</a> | "
+                    "<a href='https://scholar.google.com/citations?user=GgF3yTYAAAAJ&hl=en' target='_blank'>Google Scholar</a> | "
+                    "<a href='https://www.researchgate.net/profile/Satyam-Sangeet' target='_blank'>ResearchGate</a> | "
+                    "<a href='https://orcid.org/0000-0002-8274-6775' target='_blank'>ORCID</a> | "
+                    "<a href='mailto:satyamsangeet229@gmail.com'>Email</a>"
+                    "</p>",
+                    unsafe_allow_html=True)

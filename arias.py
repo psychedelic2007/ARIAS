@@ -14,6 +14,6 @@ app = MultiApp()
 app.add_app("Home Page", home_page)
 app.add_app("ARIAS Summarizer", arias_sum)
 app.add_app("ARIAS Ask", arias_ask)
-add.add_app("Help", help)
+app.add_app("Help", help)
 
 app.run()

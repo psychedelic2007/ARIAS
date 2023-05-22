@@ -51,7 +51,7 @@ def home_page():
     
     
     with col1:
-        st.image('my_avatar.png', width=200)
+        st.image('my_avatar.png', width=100)
     
     with col2:
         st.markdown("<h2 style='text-align: center; font-weight: bold;'>Your Name</h2>", unsafe_allow_html=True)

@@ -31,7 +31,7 @@ def help():
   st.write(" 4) You will be asked to enter a name. Give any name according to your own interest.")
   st.write(" 5) Once you have given the name then click on 'Create secret key'.")
   st.write(" 6) Once you click on 'Create secret key' you will get a new pop-up with your secret key. Your secret key will start with something like - 'sk-<alpha_numeric characters>'.")
-  st.write(" 7) Congratulations!!! You have successfully created your OpenAI API Key. Copy this key and paste it when 'ARIAS' ask you to enter your API".)
+  st.write(" 7) Congratulations!!! You have successfully created your OpenAI API Key. Copy this key and paste it when 'ARIAS' ask you to enter your API.")
   
   st.info("Review the pricing and usage details to understand the costs associated with using the API. Make sure to securely store your API key." 
           "Treat it like a password and avoid sharing it with unauthorized individuals.")

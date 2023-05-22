@@ -5,3 +5,4 @@ pyperclip
 tiktoken
 langchain
 pdf2image
+python-dotenv

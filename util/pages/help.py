@@ -33,10 +33,8 @@ def help():
   st.write(" 6) Once you click on 'Create secret key' you will get a new pop-up with your secret key. Your secret key will start with something like - 'sk-<alpha_numeric characters>'.")
   st.write(" 7) Congratulations!!! You have successfully created your OpenAI API Key. Copy this key and paste it when 'ARIAS' ask you to enter your API.")
   
-  st.info('Review the pricing and usage details to understand the costs associated with using the API. Make sure to securely store your API key." 
-          "Treat it like a password and avoid sharing it with unauthorized individuals.", icon="i")
-  st.info("OpenAI allows you to have a free $5.00 usage when you sign up for the first time. But this $5.00 free usage has a validity of I guess 1 month"
-          "So make good use of your API as the prompts used in 'ARIAS' to generate 'Summary' or to generate the 'Answers' will cost around $0.02/prompt", icon-"i")
+  st.info('Review the pricing and usage details to understand the costs associated with using the API. Make sure to securely store your API key. Treat it like a password and avoid sharing it with unauthorized individuals.", icon="i")
+  st.info("OpenAI allows you to have a free $5.00 usage when you sign up for the first time. But this $5.00 free usage has a validity of I guess 1 month. So make good use of your API as the prompts used in 'ARIAS' to generate 'Summary' or to generate the 'Answers' will cost around $0.02/prompt", icon-"i")
 
   
            

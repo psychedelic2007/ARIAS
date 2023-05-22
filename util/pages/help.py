@@ -35,8 +35,8 @@ def help():
   
   st.info("Review the pricing and usage details to understand the costs associated with using the API. Make sure to securely store your API key."
           "Treat it like a password and avoid sharing it with unauthorized individuals.", icon="ℹ️")
-  st.info("OpenAI allows you to have a free $5.00 usage when you sign up for the first time. But this $5.00 free usage has a validity of I guess 1 month. "
-          "So make good use of your API as the prompts used in 'ARIAS' to generate 'Summary' or to generate the 'Answers' will cost around $0.02/prompt", icon="ℹ️")
+  st.info("OpenAI allows you to have a free 5.00 dollar usage when you sign up for the first time. But this $5.00 free usage has a validity of I guess 1 month. "
+          "So make good use of your API as the prompts used in 'ARIAS' to generate 'Summary' or to generate the 'Answers' will cost around 0.02 dollar/prompt", icon="ℹ️")
 
   
            

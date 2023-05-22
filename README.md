@@ -1,6 +1,6 @@
 # ARIAS (Article Research Intelligence and Summarization)
 
-## Portfolio-Website
-Portfolio website build using HTML5, CSS3, JavaScript and jQuery.
+## ARIAS Website
+ARIAS website is build using Python, HTML and Streamlit.
 
-<a href="https://jigarsable.netlify.app/" target="_blank">**Visit Now** 🚀</a>
+<a href="https://psychedelic2007-arias-arias-zz6uip.streamlit.app/" target="_blank">**Visit Now** 🚀</a>

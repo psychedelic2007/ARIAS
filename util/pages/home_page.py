@@ -52,15 +52,15 @@ def home_page():
     
     with col1:
         image = Image.open('my_avatar.png')
-        avatar = image.resize((150, 150))
+        avatar = image.resize((200, 200))
         
         st.markdown(
         """
         <style>
         .avatar {
             display: inline-block;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             border-radius: 50%;
         }

@@ -51,7 +51,24 @@ def home_page():
     
     
     with col1:
-        st.image('my_avatar.png')
+        image = Image.open('my_avatar.png')
+        avatar = image.resize((150, 150))
+        
+        st.markdown(
+        """
+        <style>
+        .avatar {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True,)
+        
+        st.image(avatar, use_column_width=True, output_format='PNG')
     
     with col2:
         st.markdown("<h2 style='text-align: center; font-weight: bold;'>Your Name</h2>", unsafe_allow_html=True)

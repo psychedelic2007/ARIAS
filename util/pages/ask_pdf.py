@@ -67,5 +67,5 @@ def arias_ask():
                             print(cb)
 
                         st.write(response)
-         else:
-            st.error("Please enter your OPENAI API Key")
+        else:
+           st.error("Please enter your OPENAI API Key")

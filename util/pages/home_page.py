@@ -66,7 +66,7 @@ def home_page():
         }
         </style>
         """,
-        unsafe_allow_html=True,)
+        unsafe_allow_html=True)
         
         st.image(avatar, use_column_width=True, output_format='PNG')
     

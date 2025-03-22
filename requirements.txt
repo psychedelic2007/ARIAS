@@ -7,3 +7,4 @@ langchain
 pdf2image
 python-dotenv
 faiss-cpu
+langchain-community
